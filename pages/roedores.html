@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <!-- importando icono -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/estilos.css">
+    <title>Roedores</title>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top  ">
+    <div class="container-fluid ">
+        <a class="navbar-brand mt-4 identidadEmpresa  " href="../index.html">
+            <p class="title ms-4 mb-1  fs-6"><span class="logoEmpresa">Mokapets</span></p>
+            <p class="mensajeLogo fs-6 lh-1 ms-4 border-start ps-1">Tienda Online para<br> Mascotas y animales</p>
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " aria-current="page" href="perros.html">Perros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="gatos.html">Gatos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="roedores.html">Roedores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aves.html">Aves</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="peces.html">Peces</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="reptiles.html">Reptiles</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="caballos.html">Caballos</a>
+                </li>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+
+            </ul>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" data-dashlane-rid="79fc4d2a4c7e3c72"
+                data-form-type="">
+                <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search"
+                    data-dashlane-rid="ec40ed41cd7a4102" data-form-type="">
+            </form>
+            <div class="text-end  ">
+                <a href="carrito.html"><i class='bx bx-cart bx-lg position-static' style='color:#ffffff'><div id="icono-contenedor"><span id="icono-contador"></span></div></i></a>                
+            </div>
+        </div>
+</nav>
+
+<body>
+    <h1 class="fs-1 mt-5">Productos</h1>
+    <div class="container  justify-center   ">
+
+        <div class="row " id="items">
+
+
+        </div>
+
+
+
+    </div>
+
+    <template id="template-card">
+        <div class="col-12  col-md-4 col-lg-3 col-sm-6  d-flex mb-4 ">
+            <div class="card" style="width:200px">
+                <img class="card-img-top" src="" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-descripcion"></p>
+                    <p>$<span class="card-precio">precio</span></p>
+                    <button class="btn btn-primary">Agregar Al carrito</button>
+                </div>
+            </div>
+    </template>
+
+
+
+
+
+
+    <div class="mi-empresa">
+        <div>
+            <ul class="acerca-nosotros">
+                <p>Mokapets</p>
+                <li><a href="">Sobre Mokapets</a></li>
+                <li><a href="">Quienes somos</a></li>
+                <li><a href="">Métodos de pago</a></li>
+            </ul>
+        </div>
+
+
+        <div>
+
+            <ul>
+                <p>Contacto</p>
+                <li><a href="">¡Contacta con nosotros!</a></li>
+                <li><a href="">Seguimiento de pedidos</a></li>
+            </ul>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="formas-pago">
+        <p>Mokapets</p>
+        <img src="../assets/img/payment-methods-footer.jpg" alt="Bancos afiliados">
+
+
+
+    </div>
+    <footer>
+        ©2011-2022. Todos los derechos reservados
+    </footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+
+
+</body>
+
+</html>

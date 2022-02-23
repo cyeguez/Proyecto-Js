@@ -1,0 +1,570 @@
+{
+    "perros": [{
+            "id": 1,
+            "nombre": "Dogchow",
+            "descripcion": "18KG",
+            "precio": 33990,
+            "img": "../assets/img/perro1.jpg",
+            "stock": 10
+        },
+        {
+            "id": 2,
+            "nombre": "Kanina",
+            "descripcion": "7KG",
+            "precio": 7990,
+            "img": "../assets/img/perro2.jpg",
+            "stock": 8
+        },
+        {
+            "id": 3,
+            "nombre": "Purina",
+            "descripcion": "18KG",
+            "precio": 5000,
+            "img": "../assets/img/perro3.jpg",
+            "stock": 13
+        },
+        {
+            "id": 4,
+            "nombre": "Invermic",
+            "descripcion": "10ML",
+            "precio": 3990,
+            "img": "../assets/img/perro4.jpg",
+            "stock": 4
+        },
+        {
+            "id": 5,
+            "nombre": "Woolf Snacks",
+            "descripcion": "100GR",
+            "precio": 5650,
+            "img": "../assets/img/perro5.jpeg",
+            "stock": 7
+        },
+        {
+            "id": 6,
+            "nombre": "Simparica",
+            "descripcion": "3 Comprimidos",
+            "precio": 3000,
+            "img": "../assets/img/perro6.jpg",
+            "stock": 5
+        },
+        {
+            "id": 7,
+            "nombre": "Bio-power",
+            "descripcion": "100G",
+            "precio": 8990,
+            "img": "../assets/img/perro7.png",
+            "stock": 3
+        },
+        {
+            "id": 8,
+            "nombre": "Doguivit",
+            "descripcion": "60 Comprimidos",
+            "precio": 15000,
+            "img": "../assets/img/perro8.jpg",
+            "stock": 2
+        },
+        {
+            "id": 9,
+            "nombre": "Omega3 Pet",
+            "descripcion": "125 ML",
+            "precio": 4990,
+            "img": "../assets/img/perro9.jpg",
+            "stock": 1
+        },
+        {
+            "id": 10,
+            "nombre": "Royal Canin",
+            "descripcion": "6KG",
+            "precio": 12990,
+            "img": "../assets/img/perro10.png",
+            "stock": 6
+        }
+    ],
+    "gatos": [{
+            "id": 11,
+            "nombre": "Hantu Adult pollo",
+            "descripcion": "4KG",
+            "precio": 19897,
+            "img": "../assets/img/gato11.png",
+            "stock": 12
+        },
+        {
+            "id": 12,
+            "nombre": "Grature Cat Pollo",
+            "descripcion": "12KG",
+            "precio": 29850,
+            "img": "../assets/img/gato13.jpeg",
+            "stock": 5
+        },
+        {
+            "id": 13,
+            "nombre": "Pack 14 Atún",
+            "descripcion": "14x85GR",
+            "precio": 15274,
+            "img": "../assets/img/gato13.jpeg",
+            "stock": 10
+        },
+        {
+            "id": 14,
+            "nombre": "Almo nature pollo",
+            "descripcion": "55GR",
+            "precio": 1314,
+            "img": "../assets/img/gato14.jpeg",
+            "stock": 5
+        },
+        {
+            "id": 15,
+            "nombre": "Zotal Parasital",
+            "descripcion": "35CM",
+            "precio": 6000,
+            "img": "../assets/img/gato15.jpeg",
+            "stock": 8
+        },
+        {
+            "id": 16,
+            "nombre": "Antiparásitos",
+            "descripcion": "3250ML",
+            "precio": 24769,
+            "img": "../assets/img/gato16.png",
+            "stock": 12
+        },
+        {
+            "id": 17,
+            "nombre": "Francodex Pipetas",
+            "descripcion": "4Pipetas",
+            "precio": 6719,
+            "img": "../assets/img/gato17.jpeg",
+            "stock": 13
+        },
+        {
+            "id": 18,
+            "nombre": "Trixie Comedero",
+            "descripcion": "200ML",
+            "precio": 5126,
+            "img": "../assets/img/gato18.jpg",
+            "stock": 2
+        },
+        {
+            "id": 19,
+            "nombre": "Nayeco Comedero",
+            "descripcion": "200GR ML",
+            "precio": 15517,
+            "img": "../assets/img/gato19.jpeg",
+            "stock": 11
+        },
+        {
+            "id": 20,
+            "nombre": "KONG  Cat Conejo",
+            "descripcion": "23CM",
+            "precio": 5972,
+            "img": "../assets/img/gato20.jpg",
+            "stock": 1
+        }
+    ],
+    "roedores": [{
+            "id": 21,
+            "nombre": "Vitakraft Snacks ",
+            "descripcion": "500GR",
+            "precio": 5972,
+            "img": "../assets/img/roedores21.png",
+            "stock": 8
+        },
+        {
+            "id": 22,
+            "nombre": "Rodiland Alimento ",
+            "descripcion": "800GR",
+            "precio": 3327,
+            "img": "../assets/img/roedores22.png",
+            "stock": 2
+        },
+        {
+            "id": 23,
+            "nombre": "Anima Strath ",
+            "descripcion": "100ML",
+            "precio": 11924,
+            "img": "../assets/img/roedores23.jpg",
+            "stock": 10
+        },
+        {
+            "id": 24,
+            "nombre": "LivinSmall World arnes ",
+            "descripcion": "Big",
+            "precio": 6000,
+            "img": "../assets/img/roedores24.jpg",
+            "stock": 10
+        },
+        {
+            "id": 25,
+            "nombre": "Living World arnes ",
+            "descripcion": "Small",
+            "precio": 5249,
+            "img": "../assets/img/roedores25.jpg",
+            "stock": 2
+        },
+        {
+            "id": 26,
+            "nombre": "Ferplast Jaula ",
+            "descripcion": "35x35,5x21,5CM",
+            "precio": 14000,
+            "img": "../assets/img/roedores26.jpg",
+            "stock": 5
+        },
+        {
+            "id": 27,
+            "nombre": "Trixie Recinto ",
+            "descripcion": "130x135 CM",
+            "precio": 14000,
+            "img": "../assets/img/roedores27.jpg",
+            "stock": 3
+        },
+        {
+            "id": 28,
+            "nombre": "Fresa Masticable ",
+            "descripcion": "1 Ud",
+            "precio": 1700,
+            "img": "../assets/img/roedores28.jpg",
+            "stock": 10
+        },
+        {
+            "id": 29,
+            "nombre": "Transportín Mascotas ",
+            "descripcion": "30x21x23 CM",
+            "precio": 10103,
+            "img": "../assets/img/roedores29.jpg",
+            "stock": 4
+        },
+        {
+            "id": 30,
+            "nombre": "Trixie Pasta de malta ",
+            "descripcion": "100 GR",
+            "precio": 4602,
+            "img": "../assets/img/roedores30.jpg",
+            "stock": 5
+        }
+    ],
+    "aves": [{
+            "id": 31,
+            "nombre": "Psitacus ",
+            "descripcion": "500GR",
+            "precio": 5972,
+            "img": "../assets/img/aves.jpeg",
+            "stock": 8
+        },
+        {
+            "id": 32,
+            "nombre": "Rodiland Alimento ",
+            "descripcion": "200GR",
+            "precio": 3327,
+            "img": "../assets/img/aves2.jpeg",
+            "stock": 2
+        },
+        {
+            "id": 33,
+            "nombre": "Vitakraft ",
+            "descripcion": "200GR",
+            "precio": 4000,
+            "img": "../assets/img/aves3.png",
+            "stock": 10
+        },
+        {
+            "id": 34,
+            "nombre": "LivinSmall World Jueguete ",
+            "descripcion": "1UD",
+            "precio": 6000,
+            "img": "../assets/img/aves4.jpg",
+            "stock": 10
+        },
+        {
+            "id": 35,
+            "nombre": "Semillas ",
+            "descripcion": "200GR",
+            "precio": 5249,
+            "img": "../assets/img/aves5.jpg",
+            "stock": 2
+        },
+        {
+            "id": 36,
+            "nombre": "Tropimix ",
+            "descripcion": "100GR",
+            "precio": 14000,
+            "img": "../assets/img/aves6.jpg",
+            "stock": 5
+        },
+        {
+            "id": 37,
+            "nombre": "Bebedero ",
+            "descripcion": "50ML",
+            "precio": 14000,
+            "img": "../assets/img/aves7.jpg",
+            "stock": 3
+        },
+        {
+            "id": 38,
+            "nombre": "Comedero ",
+            "descripcion": "500GR",
+            "precio": 12200,
+            "img": "../assets/img/aves8.jpg",
+            "stock": 10
+        },
+        {
+            "id": 39,
+            "nombre": "Bebedero Acero ",
+            "descripcion": "100ML",
+            "precio": 10103,
+            "img": "../assets/img/aves9.jpg",
+            "stock": 4
+        },
+        {
+            "id": 40,
+            "nombre": "Semillas ",
+            "descripcion": "400 GR",
+            "precio": 6602,
+            "img": "../assets/img/aves10.jpg",
+            "stock": 5
+        }
+    ],
+    "peces": [{
+            "id": 41,
+            "nombre": "Tetra Foot",
+            "descripcion": "250ML",
+            "precio": 6099,
+            "img": "../assets/img/p1.jpg",
+            "stock": 10
+        },
+        {
+            "id": 42,
+            "nombre": "Tetra cichild",
+            "descripcion": "2.2KG",
+            "precio": 5990,
+            "img": "../assets/img/p2.jpg",
+            "stock": 8
+        },
+        {
+            "id": 43,
+            "nombre": "JBL Ganos Mix",
+            "descripcion": "2.2kG",
+            "precio": 60000,
+            "img": "../assets/img/p3.jpg",
+            "stock": 13
+        },
+        {
+            "id": 44,
+            "nombre": "JBL PRO POND",
+            "descripcion": "1.5",
+            "precio": 40400,
+            "img": "../assets/img/p4.png",
+            "stock": 4
+        },
+        {
+            "id": 45,
+            "nombre": "JBL Natural",
+            "descripcion": "2.2KG",
+            "precio": 56650,
+            "img": "../assets/img/p5.png",
+            "stock": 7
+        },
+        {
+            "id": 46,
+            "nombre": "JBL Natural Red",
+            "descripcion": "125GR",
+            "precio": 3000,
+            "img": "../assets/img/p6.jpg",
+            "stock": 5
+        },
+        {
+            "id": 47,
+            "nombre": "TEtra colour",
+            "descripcion": "1.2KG ",
+            "precio": 45900,
+            "img": "../assets/img/p7.jpeg",
+            "stock": 3
+        },
+        {
+            "id": 48,
+            "nombre": "Bettgran",
+            "descripcion": "44GR",
+            "precio": 1500,
+            "img": "../assets/img/p8.png",
+            "stock": 2
+        },
+        {
+            "id": 49,
+            "nombre": "TETRA Plecomin",
+            "descripcion": "1KG",
+            "precio": 24400,
+            "img": "../assets/img/p9.jpg",
+            "stock": 1
+        },
+        {
+            "id": 50,
+            "nombre": "Golosina",
+            "descripcion": "16GR",
+            "precio": 1290,
+            "img": "../assets/img/p10.png",
+            "stock": 6
+        }
+    ],
+    "reptiles": [{
+            "id": 51,
+            "nombre": "Protector Cage",
+            "descripcion": "1UD",
+            "precio": 7887,
+            "img": "../assets/img/r1.png",
+            "stock": 5
+        },
+        {
+            "id": 52,
+            "nombre": "Tetra Cichild ",
+            "descripcion": "800GR",
+            "precio": 30590,
+            "img": "../assets/img/r2.jpg",
+            "stock": 5
+        },
+        {
+            "id": 53,
+            "nombre": "Grano Mix",
+            "descripcion": "1KG",
+            "precio": 40500,
+            "img": "../assets/img/r3.jpg",
+            "stock": 10
+        },
+        {
+            "id": 54,
+            "nombre": "JBL Prpon",
+            "descripcion": "2.2KG",
+            "precio": 20.363,
+            "img": "../assets/img/r4.jpeg",
+            "stock": 5
+        },
+        {
+            "id": 55,
+            "nombre": "Sera Cichlid Red ",
+            "descripcion": "3.6KG",
+            "precio": 56900,
+            "img": "../assets/img/r5.jpeg",
+            "stock": 8
+        },
+        {
+            "id": 56,
+            "nombre": "Antiparásitos",
+            "descripcion": "3250ML",
+            "precio": 24769,
+            "img": "../assets/img/r6.jpeg",
+            "stock": 12
+        },
+        {
+            "id": 57,
+            "nombre": "terra-manta",
+            "descripcion": "200x20CM",
+            "precio": 6719,
+            "img": "../assets/img/r7.jpg",
+            "stock": 13
+        },
+        {
+            "id": 58,
+            "nombre": "reptifiber",
+            "descripcion": "200ML",
+            "precio": 5126,
+            "img": "../assets/img/r8.png",
+            "stock": 2
+        },
+        {
+            "id": 59,
+            "nombre": "repitilin-vitaminas",
+            "descripcion": "200GR ML",
+            "precio": 15517,
+            "img": "../assets/img/r9.png",
+            "stock": 11
+        },
+        {
+            "id": 60,
+            "nombre": "repti-clear",
+            "descripcion": "23CM",
+            "precio": 5972,
+            "img": "../assets/img/r10.jpg",
+            "stock": 1
+        }
+    ],
+
+    "caballos": [{
+            "id": 61,
+            "nombre": "campana abierta",
+            "descripcion": "xl",
+            "precio": 4956,
+            "img": "../assets/img/c1.jpg",
+            "stock": 5
+        },
+        {
+            "id": 62,
+            "nombre": "audervard ",
+            "descripcion": "2KG",
+            "precio": 101953,
+            "img": "../assets/img/c2.jpg",
+            "stock": 5
+        },
+        {
+            "id": 63,
+            "nombre": "manta anti mosca",
+            "descripcion": "Azul 185CM",
+            "precio": 71980,
+            "img": "../assets/img/c3.jpeg",
+            "stock": 10
+        },
+        {
+            "id": 64,
+            "nombre": "JBL Prpon",
+            "descripcion": "2.2KG",
+            "precio": 20.363,
+            "img": "../assets/img/c4.jpg",
+            "stock": 5
+        },
+        {
+            "id": 65,
+            "nombre": "salva dorso ",
+            "descripcion": "Color Naranja",
+            "precio": 36145,
+            "img": "../assets/img/c5.jpg",
+            "stock": 8
+        },
+        {
+            "id": 66,
+            "nombre": "Herradura",
+            "descripcion": "xl",
+            "precio": 24769,
+            "img": "../assets/img/c6.jpg",
+            "stock": 12
+        },
+        {
+            "id": 67,
+            "nombre": "Casco Safelty",
+            "descripcion": "57-58",
+            "precio": 101000,
+            "img": "../assets/img/c7.jpg",
+            "stock": 13
+        },
+        {
+            "id": 68,
+            "nombre": "silla",
+            "descripcion": "200ML",
+            "precio": 5126,
+            "img": "../assets/img/c8.jpg",
+            "stock": 2
+        },
+        {
+            "id": 69,
+            "nombre": "Pelota",
+            "descripcion": "Color Rosada",
+            "precio": 15517,
+            "img": "../assets/img/c9.jpg",
+            "stock": 11
+        },
+        {
+            "id": 70,
+            "nombre": "Audevard Redplex",
+            "descripcion": "3LT",
+            "precio": 90999,
+            "img": "../assets/img/c10.jpg",
+            "stock": 1
+        }
+    ]
+}
