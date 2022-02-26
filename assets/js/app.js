@@ -1,17 +1,13 @@
 /* ----------------------------------- DOM ---------------------------------- */
 const item = document.querySelector('#items')
-
-
 // const boton = document.querySelectorAll('.card-boton')
 const contadorIcono = document.querySelector('#contador')
 const fragment = document.createDocumentFragment()
 const contenedorCarrito = document.querySelector('#articulos-compra')
 
-
 /* ----------------------------------- DOM ---------------------------------- */
-
 let carrito
-let cuenta
+
 if (sessionStorage.getItem('contProductos')) {
     cuenta = JSON.parse(sessionStorage.getItem('contProductos'))
 
@@ -26,58 +22,77 @@ if (sessionStorage.getItem('carrito')) {
     carrito = new Cart()
 
 }
-
-
 /* -------------------------------- Llamando a mi json -------------------------------- */
-let ruta = "../assets/js/productos.json"
-let datos = []
-var lista;
 
-fetch(ruta)
-    .then((response) => response.json())
-    .then((json) => {
-        const datos = (json)
+let data
+let lista;
 
-        let nombreSeccion = document.title.toLowerCase();
-        if (nombreSeccion == 'perros' || nombreSeccion == 'gatos' || nombreSeccion == 'roedores' || nombreSeccion == 'aves' || nombreSeccion == 'peces' || nombreSeccion == 'reptiles' || nombreSeccion == 'caballos') {
-            for (producto in datos) {
-                if (producto = nombreSeccion) {
-                    lista = datos[producto]
+document.addEventListener('DOMContentLoaded', () => {
+    fetchData()
+})
 
-                }
-            }
+const fetchData = async () => {
+    try {
+        const res = await fetch("../assets/js/productos.json")
+        const data = await res.json()
+        pintarTarjeta(data)
+    } catch (error) {
+        // console.log('error');
+    }
 
-        }
+}
 
-        /* -------------------------------- Llamando a mi json -------------------------------- */
+const pintarTarjeta = function (data) {
 
-        /* ------------------------ mostrando los productos ------------------------ */
-        for (let i = 0; i < lista.length; i++) {
+    let nombreSeccion = document.title.toLowerCase();
 
+    for (producto in data) {
+        if (producto = nombreSeccion) {
+            lista = data[producto]
 
-            const contenedorCard = document.createElement('div')
-            contenedorCard.classList.add('contenedor-card')
-            contenedorCard.innerHTML = ` 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12  ">                
-                    <div class="card d-flex justify-content-center" style="width:200px">
-                        <img class="card-img-top" src="${lista[i].img}" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h5 class="card-title">${lista[i].nombre}</h5>
-                            <p class="card-descripcion">${lista[i].descripcion}</p>
-                            <p>$<span class="card-precio">${lista[i].precio}</span></p>
-                            <button class="btn btn-primary"data-set=${lista[i].id}>Agregar Al carrito</button>
+            for (let i = 0; i < lista.length; i++) {
+                const contenedorCard = document.createElement('div')
+                contenedorCard.classList.add('contenedor-card')
+                contenedorCard.innerHTML = ` 
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12  ">                
+                        <div class="card d-flex justify-content-center" style="width:200px">
+                            <img class="card-img-top" src="${lista[i].img}" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h5 class="card-title">${lista[i].nombre}</h5>
+                                <p class="card-descripcion">${lista[i].descripcion}</p>
+                                <p>$<span class="card-precio">${lista[i].precio}</span></p>
+                                <button class="btn btn-primary"data-set=${lista[i].id}>Agregar Al carrito</button>
+                            </div>
                         </div>
-                    </div>
-            </div>   
-    `
-
-
-            const clone = contenedorCard.cloneNode(true);
-            fragment.appendChild(clone);
+                </div>   `
+                const clone = contenedorCard.cloneNode(true);
+                fragment.appendChild(clone);
+            }
+            item.appendChild(fragment)
         }
-        item.appendChild(fragment)
+    }
+    filtrar(lista);
+}
+
+function filtrar(lista) {
+    let productoFiltrado = 0
+    console.log(lista);
+    const contenedorSelect = document.querySelector('#filtro')
+    contenedorSelect.addEventListener('change', (e) => {
+
+        if (e.target.value == "Menor Precio") {
+            productoFiltrado = lista.sort((a, b) => (a.precio - b.precio))
+            console.log(productoFiltrado);
+            
+        }
 
     })
+}
+
+
+
+
+
 
 
 /* ----------- Agregando eventos a los botones agregar al carrito ----------- */
@@ -90,17 +105,9 @@ item.addEventListener("click", (e) => {
         sessionStorage.setItem('carrito', JSON.stringify(carrito))// guardando los productos seleccionados
         sessionStorage.setItem('contProductos', JSON.stringify(cuenta))
 
-
-
-
-
     }
 })
 
-
-
-
-// /* ----------- Agregando eventos a los botones agregar al carrito ----------- */
 
 
 

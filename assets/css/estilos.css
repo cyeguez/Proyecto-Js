@@ -3,6 +3,7 @@
     --blanco: #ffffff;
     --gris: rgb(240, 240, 240);
     --rojo: #F83A53;
+    --fuente1:font-family: 'Lobster Two', cursive;
 
 }
 
@@ -329,4 +330,15 @@ a .mensajeLogo {
         font-size: 12px;
     }
     
+}
+/* -------------------------------------------------------------------------- */
+/*                                   filtro                                   */
+/* -------------------------------------------------------------------------- */
+.filtro{
+    text-align: center;
+    font-family: var(--fuente1);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: small;
+    color: rgba(17, 16, 16, 0.822);
 }
