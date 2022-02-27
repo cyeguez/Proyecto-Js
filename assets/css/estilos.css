@@ -334,7 +334,7 @@ a .mensajeLogo {
 /* -------------------------------------------------------------------------- */
 /*                                   filtro                                   */
 /* -------------------------------------------------------------------------- */
-.filtro{
+.contenedor-filtro{
     text-align: center;
     font-family: var(--fuente1);
     text-transform: uppercase;

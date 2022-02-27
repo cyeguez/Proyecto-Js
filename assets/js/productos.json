@@ -11,7 +11,7 @@
             "id": 2,
             "nombre": "Kanina",
             "descripcion": "7KG",
-            "precio": 7990,
+            "precio": 18990,
             "img": "../assets/img/perro2.jpg",
             "stock": 8
         },
@@ -19,7 +19,7 @@
             "id": 3,
             "nombre": "Purina",
             "descripcion": "18KG",
-            "precio": 5000,
+            "precio": 32000,
             "img": "../assets/img/perro3.jpg",
             "stock": 13
         },

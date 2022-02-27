@@ -4,9 +4,12 @@ const item = document.querySelector('#items')
 const contadorIcono = document.querySelector('#contador')
 const fragment = document.createDocumentFragment()
 const contenedorCarrito = document.querySelector('#articulos-compra')
-
+const contenedorSelect = document.querySelector('#filtro-select')
 /* ----------------------------------- DOM ---------------------------------- */
 let carrito
+let lista
+let listaOrdena
+
 
 if (sessionStorage.getItem('contProductos')) {
     cuenta = JSON.parse(sessionStorage.getItem('contProductos'))
@@ -24,8 +27,8 @@ if (sessionStorage.getItem('carrito')) {
 }
 /* -------------------------------- Llamando a mi json -------------------------------- */
 
-let data
-let lista;
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData()
@@ -42,26 +45,31 @@ const fetchData = async () => {
 
 }
 
-const pintarTarjeta = function (data) {
+
+
+
+
+const pintarTarjeta = (arreglo) => {
 
     let nombreSeccion = document.title.toLowerCase();
-
-    for (producto in data) {
+     lista
+    
+    for (producto in arreglo) {
         if (producto = nombreSeccion) {
-            lista = data[producto]
+            lista = arreglo[producto]
+            for (let productos of (lista)) {
 
-            for (let i = 0; i < lista.length; i++) {
                 const contenedorCard = document.createElement('div')
                 contenedorCard.classList.add('contenedor-card')
                 contenedorCard.innerHTML = ` 
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12  ">                
                         <div class="card d-flex justify-content-center" style="width:200px">
-                            <img class="card-img-top" src="${lista[i].img}" alt="Card image" style="width:100%">
+                            <img class="card-img-top" src="${productos.img}" alt="Card image" style="width:100%">
                             <div class="card-body">
-                                <h5 class="card-title">${lista[i].nombre}</h5>
-                                <p class="card-descripcion">${lista[i].descripcion}</p>
-                                <p>$<span class="card-precio">${lista[i].precio}</span></p>
-                                <button class="btn btn-primary"data-set=${lista[i].id}>Agregar Al carrito</button>
+                                <h5 class="card-title">${productos.nombre}</h5>
+                                <p class="card-descripcion">${productos.descripcion}</p>
+                                <p>$<span class="card-precio">${productos.precio}</span></p>
+                                <button class="btn btn-primary"data-set=${productos.id}>Agregar Al carrito</button>
                             </div>
                         </div>
                 </div>   `
@@ -71,27 +79,33 @@ const pintarTarjeta = function (data) {
             item.appendChild(fragment)
         }
     }
-    filtrar(lista);
+    console.log(lista);
+
+
+    listaOrdena=filtrar(lista, contenedorSelect);
 }
 
-function filtrar(lista) {
+
+
+const filtrar = (arreglo, select) => {
     let productoFiltrado = 0
-    console.log(lista);
-    const contenedorSelect = document.querySelector('#filtro')
-    contenedorSelect.addEventListener('change', (e) => {
 
+
+    select.addEventListener('change', (e) => {
         if (e.target.value == "Menor Precio") {
-            productoFiltrado = lista.sort((a, b) => (a.precio - b.precio))
+            productoFiltrado = arreglo.sort((a, b) => (a.precio - b.precio))
             console.log(productoFiltrado);
-            
-        }
+            pintarTarjeta(productoFiltrado)
 
+        }
+        if (e.target.value == "Mayor Precio") {
+            productoFiltrado = arreglo.sort((a, b) => (b.precio - a.precio))
+            console.log(productoFiltrado);
+            return(productoFiltrado)
+
+        }
     })
 }
-
-
-
-
 
 
 
@@ -108,7 +122,7 @@ item.addEventListener("click", (e) => {
     }
 })
 
-
+console.log(listaOrdena);
 
 
 

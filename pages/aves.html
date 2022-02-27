@@ -81,27 +81,35 @@
 </nav>
 
 <body>
-    <h1 class="fs-1 mt-5">Productos</h1>
-    <div class="container  justify-center   ">
+    <div class="container">
+        <div class="row">
 
-        <div class="row " id="items">        
+            <div class="col-lg-2 col-md-2 contenedor-filtro  ">
+                <p class="pt-5  ">Filtro Rápidos</p>
+                <div>
+                    <select name="filtro" id="filtro-select" class="form-select">
+                        <option selected>Precio</option>
+                        <option value="Menor Precio">Menor Precio</option>
+                        <option value="Mayor Precio">Mayor Precio</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-10 col-mdg-2">
+                <div class=" container   ">
+                    <h1 class="fs-3 mt-5 text-lg-center  text-center ">Productos</h1>
 
+                    <div class=" d-flex row " id="items">
+
+                    </div>
+                </div>
+            </div>
+          
         </div>
 
     </div>
 
-    <template id="template-card">
-        <div class="col-12  col-md-4 col-lg-3 col-sm-6  d-flex mb-4 ">
-            <div class="card" style="width:200px">
-                <img class="card-img-top" src="" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-descripcion"></p>
-                    <p>$<span class="card-precio">precio</span></p>
-                    <button class="btn btn-primary">Agregar Al carrito</button>
-                </div>
-            </div>
-    </template>
+
+  
 
 
 
